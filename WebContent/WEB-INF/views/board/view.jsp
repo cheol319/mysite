@@ -37,6 +37,7 @@
 					</tr>
 				</table>
 				<div class="bottom">
+					<a href="/mysite/board?a=rf&no=${vo.no }">답글</a>
 					<a href="/mysite/board">글목록</a>
 					<c:if test='${authUser.no == vo.userNo }'>
 						<a href="/mysite/board?a=mf&no=${vo.no }">글수정</a>

@@ -17,6 +17,11 @@
 			<div id="board">
 				<form class="board-form" method="post" action="/mysite/board">
 					<input type = "hidden" name = "a" value="write">
+					<c:if test='${not empty vo }'>
+						<input type = "hidden" name = "groupNo" value='${vo.groupNo }'>
+						<input type = "hidden" name = "orderNo" value='${vo.orderNo }'>
+						<input type = "hidden" name = "depth" value='${vo.depth }'>
+					</c:if>
 					<table class="tbl-ex">
 						<tr>
 							<th colspan="2">글쓰기</th>

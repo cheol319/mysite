@@ -11,6 +11,7 @@ public class BoardVo {
 	private Long depth;
 	private Long userNo;
 	private String userName;
+	private Long totalRecords;
 	
 	public Long getNo() {
 		return no;
@@ -74,6 +75,14 @@ public class BoardVo {
 	public void setUserName(String userName) {
 		this.userName = userName;
 	}
+	
+	public Long getTotalRecords() {
+		return totalRecords;
+	}
+	public void setTotalRecords(Long totalRecords) {
+		this.totalRecords = totalRecords;
+	}
+	
 	@Override
 	public String toString() {
 		return "BoardVo [no=" + no + ", title=" + title + ", content=" + content + ", regDate=" + regDate
